@@ -35,7 +35,7 @@ export default defineConfig({
   ],
   npmClient: 'tnpm',
   chainWebpack(memo, { env, webpack }) {
-    memo.mode('development');
+    memo.mode('production');
     memo.target(['web', 'es2020']);
   },
 });
